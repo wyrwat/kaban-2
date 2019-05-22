@@ -46,16 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   };  
     
-  this.element.querySelector('.column').addEventListener('click', function (event) {
-    if (event.target.classList.contains('btn-delete')) {
-      self.removeColumn();
-    }
-  
-    if (event.target.classList.contains('add-card')) {
-      self.addCard(new Card(prompt("Enter the name of the card")));
-    }
-  });
-    
   function Card(description) {
     var self = this;
   
