@@ -42,10 +42,15 @@
                 }
             }
 
-
             .column-title-container {
                 justify-content: center;
             }
+
+            .btn-container {
+                //align-content: flex-end;
+                justify-items: center;
+            }
+            
         }
 }
 
@@ -65,10 +70,11 @@
                 text-transform: uppercase;
             }
         }
-        .btn-card {
+
+        .btn-item {
             background-color: orange;
-           
         }
+
 }
 
 .btn {

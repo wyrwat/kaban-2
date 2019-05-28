@@ -19,14 +19,16 @@
     <script id="column-template" type="x-tmpl-mustache">
       
       <div class="column flex-container">
-        <div class="flex-container column-title-container">
+        <div class="column-title-container flex-container">
           <h2 class="column-title">{{ name }}</h2>
         </div>
         <div class="column-card-list-container flex-container">
           <ul id={{ id }} class="column-card-list"></ul>
         </div>
-        <button class="btn btn-delete">X</button>
-        <button class="btn add-card">Add a card</button>
+        <div class="btn-container flex-container">
+          <button class="btn btn-delete">X</button>
+          <button class="btn add-card">Add a card</button>
+        </div>
       </div>
     </script>
     <script id="card-template" type="x-tmpl-mustache">
@@ -34,7 +36,7 @@
         <div class="card-description-container flex-container">
           <p class="card-description">{{ description }}</p>
         </div> 
-          <button class="btn btn-delete btn-card">x</button>
+          <button class="btn  btn-item">x</button>
       </div>
     </script>
     <script src="js/script.js"></script>

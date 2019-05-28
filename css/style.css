@@ -45,6 +45,10 @@
   justify-content: center;
 }
 
+.board .column .btn-container {
+  justify-items: center;
+}
+
 .card {
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -63,7 +67,7 @@
   text-transform: uppercase;
 }
 
-.card .btn-card {
+.card .btn-item {
   background-color: orange;
 }
 

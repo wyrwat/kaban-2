@@ -54,6 +54,11 @@
       justify-content: center;
 }
 
+.board .column .btn-container {
+  -ms-grid-column-align: center;
+      justify-items: center;
+}
+
 .card {
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -75,7 +80,7 @@
   text-transform: uppercase;
 }
 
-.card .btn-card {
+.card .btn-item {
   background-color: orange;
 }
 
