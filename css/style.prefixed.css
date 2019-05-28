@@ -6,11 +6,15 @@
 .board {
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .board .header-container {
   -ms-flex-pack: center;
       justify-content: center;
+  text-transform: uppercase;
+  background-color: orange;
 }
 
 .board .column-container {
@@ -24,7 +28,7 @@
   -ms-flex-direction: column;
       flex-direction: column;
   border: 2px solid black;
-  border-radius: 2%;
+  border-radius: 5px;
   height: 100%;
   width: 350px;
   margin-top: 20px;
@@ -43,7 +47,7 @@
 
 .board .column .column-card-list-container .column-card-list li {
   border: 1px solid orange;
-  border-radius: 3%;
+  border-radius: 3px;
   width: 250px;
   margin-top: 10px;
   margin-left: 10px;
@@ -52,16 +56,36 @@
 .board .column .column-title-container {
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: black;
+}
+
+.board .column .column-title-container .column-title {
+  color: orange;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .board .column .btn-container {
-  -ms-grid-column-align: center;
-      justify-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.board .column .btn-container .btn-delete,
+.board .column .btn-container .add-card {
+  color: orange;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.board .create-column {
+  color: orange;
+  padding: 5px;
 }
 
 .card {
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
@@ -82,10 +106,14 @@
 
 .card .btn-item {
   background-color: orange;
+  font-weight: 700;
 }
 
 .btn {
   border: none;
   cursor: pointer;
+  background-color: black;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
