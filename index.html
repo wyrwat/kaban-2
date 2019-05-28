@@ -10,7 +10,7 @@
       <div class="header-container flex-container">
           <h1>Kanban board</h1>
       </div>
-      <button class="create-column">Add a column</button>
+      <button class="btn create-column">Add a column</button>
       <div class="column-container flex-container"></div>
     </div>
 
@@ -25,8 +25,8 @@
         <div class="column-card-list-container flex-container">
           <ul id={{ id }} class="column-card-list"></ul>
         </div>
-        <button class="btn-delete">X</button>
-        <button class="add-card">Add a card</button>
+        <button class="btn btn-delete">X</button>
+        <button class="btn add-card">Add a card</button>
       </div>
     </script>
     <script id="card-template" type="x-tmpl-mustache">
@@ -34,7 +34,7 @@
         <div class="card-description-container flex-container">
           <p class="card-description">{{ description }}</p>
         </div> 
-          <button class="btn-delete btn-card">x</button>
+          <button class="btn btn-delete btn-card">x</button>
       </div>
     </script>
     <script src="js/script.js"></script>

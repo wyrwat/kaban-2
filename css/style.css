@@ -17,9 +17,11 @@
 
 .board .column {
   flex-direction: column;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 2%;
   height: 100%;
   width: 350px;
+  margin-top: 20px;
 }
 
 .board .column .column-card-list-container {
@@ -32,8 +34,10 @@
 }
 
 .board .column .column-card-list-container .column-card-list li {
-  border: 1px solid black;
+  border: 1px solid orange;
+  border-radius: 3%;
   width: 250px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 
@@ -44,17 +48,28 @@
 .card {
   justify-content: space-between;
   flex-wrap: nowrap;
-  max-width: 250px;
 }
 
 .card .card-description-container {
   flex-wrap: wrap;
-  max-width: 200px;
-  background-color: green;
+  max-width: 100%;
+  width: 350px;
+  background-color: orange;
+}
+
+.card .card-description-container .card-description {
+  margin-left: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .card .btn-card {
-  background-color: blue;
+  background-color: orange;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
